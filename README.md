@@ -10,45 +10,38 @@
   
 <!-- Badges -->
 
-<a href="https://github.com/cifertech/nrfbox" title="Go to GitHub repo"><img src="https://img.shields.io/static/v1?label=cifertech&message=nrfbox&color=purple&logo=github" alt="cifertech - nrfbox"></a>
-<a href="https://github.com/cifertech/nrfbox"><img src="https://img.shields.io/github/stars/cifertech/nrfbox?style=social" alt="stars - nrfbox"></a>
-<a href="https://github.com/cifertech/nrfbox"><img src="https://img.shields.io/github/forks/cifertech/nrfbox?style=social" alt="forks - nrfbox"></a>
+<a href="https://github.com/cifertech/nrfbox" title="Go to GitHub repo"><img src="https://img.shields.io/static/v1?label=cifertech&message=nrfbox&color=purple&logo=github" alt="arthasa28 - nrfbox"></a>
    
 <h4>
-    <a href="https://twitter.com/cifertech1">TWITTER</a>
+    <a href="https://www.instagram.com/artha_sa_/">INSTAGRAM</a>
   <span> · </span>
-    <a href="https://www.instagram.com/cifertech/">INSTAGRAM</a>
-  <span> · </span>
-    <a href="https://www.youtube.com/c/cifertech">YOUTUBE</a>
-  <span> · </span>
-    <a href="https://cifertech.net/">WEBSITE</a>
+    <a href="https://arthasa.my.id/">WEBSITE</a>
   </h4>
 </div>
 
 <br />
 
 
+Catatan Rilis nRF-BOX - Versi 2.1.1
 
-nRF-BOX Release Note - Version 2.1.1
+Tanggal Rilis: [15/8/2023]
 
-Release Date: [8/15/2023]
+## Fitur Baru
 
-## New Features
+- Penganalisis 128 saluran
+- Tampilkan status dengan NeoPixel ws2812
 
-- 128-channel analyzer
-- Show status with NeoPixel ws2812
+## Peningkatan
 
-## Enhancements
+- Pengacau 2.4 ditingkatkan dengan kontrol yang lebih baik untuk pemilihan saluran dan memulai serangan
+- Pengacau 2.4 lebih efektif (ini memberi Anda opsi untuk menurunkan lalu lintas di saluran tertentu, bukan memutus saluran sepenuhnya)
+- Grafik yang lebih sesuai untuk penganalisis saluran
 
-- 2.4 Jammer improved with better control for channel selection and starting the attack
-- 2.4 jammer is more effective (this gives you the option to lower the traffic in a specific channel not entirely cut the channel off)
-- More suitable graph for channel analyzer
+## Perbaikan Bug
 
-## Bug Fixes
-
-- Menu Selection bug fixed
-- RF scanner bug fixed
-- 2.4 jammer bug fixed
+- Bug Pemilihan Menu telah diperbaiki
+- Bug pemindai RF telah diperbaiki
+- Bug pengacau 2.4 telah diperbaiki
 
 ===========================================================================
 
@@ -57,40 +50,38 @@ Release Date: [8/15/2023]
 
   
 
-<!-- About the Project -->
-## :star2: About the Project
-In this project, I build a 2.4GHz scanner/jammer/Channel Analyzer using the nRF24L01.
+<!-- Tentang Proyek -->
+## :star2: Tentang Proyek
+Dalam proyek ini, saya membuat pemindai/pengacau/Penganalisis Saluran 2,4GHz menggunakan nRF24L01.
 
-
-<!-- Pictures -->
-### :camera: Pictures
+<!-- Gambar -->
+### :camera: Gambar
 
 <div align="center"> 
   <img src="https://user-images.githubusercontent.com/62047147/206877956-d8b08ef5-fdc4-4f3d-a5c2-49f01483b8cb.jpg" alt="screenshot" />
 </div>
 
 
-<!-- Features -->
-### :dart: Features
+<!-- Fitur -->
+### :dart: Fitur
 
-- Scan 2.4Ghz band
-- 2.4Ghz jammer
-- Channel Analyzer
+- Pindai pita 2,4Ghz
+- Pengacau 2,4Ghz
+- Penganalisis Saluran
 
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
+<!-- Memulai -->
+## :toolbox: Memulai
 
-We will use Arduino Pro Mini as a processor. Also, an OLED display to show the Menu and desired options. With the nRF24 module, we can execute the features. 
+Kita akan menggunakan Arduino Pro Mini sebagai prosesor. Selain itu, layar OLED untuk menampilkan Menu dan opsi yang diinginkan. Dengan modul nRF24, kita dapat menjalankan fitur-fiturnya.
 
 - Arduino Pro Mini
 - nRF24
-- Oled 0.96 SSD1306
-
+- Oled 0,96 SSD1306
 <!-- Schematic -->
 ### :electric_plug: Schematic
-Make the connections according to the table and schematic below.
+Buat koneksi sesuai dengan tabel dan skema di bawah ini.
 
-* Arduino and nRF24.
+* Arduino dan nRF24.
 
 | Arduino| nRF24|  
 | ----   | -----|
@@ -103,7 +94,7 @@ Make the connections according to the table and schematic below.
 | GND | GND |
 
 
-* Arduino and OLED display.
+* Arduino dan OLED display.
 
 | Arduino| Oled 0.96|
 | ----   | -----|
@@ -118,52 +109,28 @@ Make the connections according to the table and schematic below.
 <img src="https://user-images.githubusercontent.com/62047147/206878457-5e729716-5ee7-4f6b-97f5-b45559d7cc2a.png" alt="screenshot" width="800" height="auto" />
 
 
-<!-- Installation -->
-### :gear: Installation
+<!-- Instalasi -->
+### :gear: Instalasi
 
-Before uploading the code you need to install the required library in Arduino IDE. Follow these steps:
+Sebelum mengunggah kode, Anda perlu menginstal pustaka yang diperlukan di Arduino IDE. Ikuti langkah-langkah berikut:
 
-- Follow this path Sketch> Include Library> Manage Libraries
-- Search for Adafruit SSD1306
-- Install the library
+- Ikuti jalur ini Sketch> Include Library> Manage Libraries
+- Cari Adafruit SSD1306
+- Instal pustaka
 
--Then search for the “GFX” and install it also.
+-Kemudian cari “GFX” dan instal juga.
 
--Also you need "NRF24" library.
-   
-<!-- Usage -->
-## :eyes: Usage
+-Anda juga memerlukan pustaka "NRF24".
 
-After uploading the code, the Menu will show up and you able to choose the option you want.
+<!-- Penggunaan -->
+## :eyes: usage
 
+Setelah mengunggah kode, Menu akan muncul dan Anda dapat memilih opsi yang Anda inginkan.
 <img src="https://user-images.githubusercontent.com/62047147/206902220-c793003a-2a08-4eb2-8154-6182c203cf49.jpg" alt="screenshot" width="300" height="auto" />
 
-
-<!-- Contributing -->
-## :wave: Contributing
-
-<a href="https://github.com/cifertech/nrfbox/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=cifertech/nrfbox" />
-</a>
 
 
 <!-- License -->
 ## :warning: License
 
-Distributed under the MIT License. See LICENSE.txt for more information.
-
-
-<!-- Contact -->
-## :handshake: Contact
-
-CiferTech - [@twitter](https://twitter.com/cifertech1) - CiferTech@gmali.com
-
-Project Link: [https://github.com/cifertech/nRFBox](https://github.com/cifertech/nRFBox)
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements 
-
- - [Poor Man’s 2.4 GHz Scanner](https://forum.arduino.cc/t/poor-mans-2-4-ghz-scanner/54846)
- - [nRF24L01-WiFi-Jammer](https://github.com/hugorezende/nRF24L01-WiFi-Jammer)
- - [Universal-RC-system](https://github.com/alexbeliaev/Universal-RC-system/tree/master)
-
+Didistribusikan di bawah Lisensi MIT. Lihat LICENSE.txt untuk informasi lebih lanjut.
